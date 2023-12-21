@@ -53,7 +53,7 @@
 .right__about-robotic-surgery img {
   max-width: 500px;
   max-height: 500px;
-  border-radius: 8px;
+  border-radius: 1rem;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease-in-out;
 }
@@ -104,7 +104,7 @@
   transform: translateX(5px);
 }
 
-
+// ESTILOS RESPONSIVOS
 
 @media (max-width: 1400px) {
  .about-title {
@@ -123,6 +123,11 @@
  .about-text {
    font-size: 1rem;
  }
+
+ .right__about-robotic-surgery img {
+   max-width: 400px;
+   max-height: 400px;
+  }
   // .more-info-button {
   //   width: 200px;
   //   height: 50px;
@@ -158,5 +163,109 @@
     max-height: 400px;
     margin-top: 40px;
 
-    }
+  }
+
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 1.5rem;
+  }
+
+  .about-text {
+    font-size: 1rem;
+  }
+
+  .right__about-robotic-surgery img {
+    max-width: 400px;
+    max-height: 300px;
+  }
+
+  .more-info-button {
+    width: 220px;
+    height: 50px;
+  }
+
+  .more-info-button__span {
+    font-size: .9rem;
+  }
+
+  .more-info-button__icon {
+    height: .8rem;
+    width: .8rem;
+  }
+
+  .more-info-button__icon svg {
+    height: .8rem;
+    width: .8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-title {
+    font-size: 1.2rem;
+  }
+
+  .about-text {
+    font-size: .9rem;
+  }
+
+  .right__about-robotic-surgery img {
+    max-width: 300px;
+    max-height: 300px;
+  }
+
+  .more-info-button {
+    width: 220px;
+    height: 50px;
+  }
+
+  .more-info-button__span {
+    font-size: .9rem;
+  }
+
+  .more-info-button__icon {
+    height: .8rem;
+    width: .8rem;
+  }
+
+  .more-info-button__icon svg {
+    height: .8rem;
+    width: .8rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .about-title {
+    font-size: 1rem;
+  }
+
+  .about-text {
+    font-size: .9rem;
+  }
+
+  .right__about-robotic-surgery img {
+    max-width: 250px;
+    max-height: 250px;
+  }
+
+  .more-info-button {
+    width: 230px;
+    height: 40px;
+  }
+
+  .more-info-button__span {
+    font-size: .9rem;
+    margin-right: 5px;
+  }
+
+  .more-info-button__icon {
+    height: .8rem;
+    width: .8rem;
+  }
+
+  .more-info-button__icon svg {
+    height: .8rem;
+    width: .8rem;
+  }
+}
+
 }

@@ -1,3 +1,4 @@
+import { ViewportScroller } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AboutJuanComponent {
 
+  constructor(private viewPortScroller: ViewportScroller) { }
+
+  goToDrJuanLuisBernava() {
+    this.viewPortScroller.scrollToPosition([0,0]);
+  }
 }

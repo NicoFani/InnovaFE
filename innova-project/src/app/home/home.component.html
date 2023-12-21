@@ -1,6 +1,11 @@
 <!-- Banner de presentación -->
 <div class="presentation-banner">
   <div class="overlay"></div>
+  <div class="video-container">
+    <video id="video" onloadedmetadata="this.muted=true" autoplay loop>
+      <source src="assets/images/da_vinci_video.mp4" type="video/mp4">
+    </video>
+  </div>
   <div class="container-text">
     <h1>Introduciendo la Cirugía Robótica en Rosario</h1>
     <div class="container__text-separator">
@@ -11,5 +16,6 @@
   </div>
 <app-about-robotic-surgery></app-about-robotic-surgery>
 <app-about-da-vinci-plataform></app-about-da-vinci-plataform>
+<app-about-finochietto-sanatorium></app-about-finochietto-sanatorium>
 <app-about-juan></app-about-juan>
 <app-about-sebastian></app-about-sebastian>

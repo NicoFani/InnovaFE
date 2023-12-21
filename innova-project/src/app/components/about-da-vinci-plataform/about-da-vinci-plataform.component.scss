@@ -104,6 +104,9 @@
 }
 
 
+// ESTILOS RESPONSIVOS
+
+
 @media (max-width: 1400px) {
   .about-title {
     font-size: 2.5rem;
@@ -111,6 +114,11 @@
 
   .about-text {
     font-size: 1.2rem;
+  }
+
+  .left__about-da-vinci-plataform img {
+    max-width: 450px;
+    max-height: 450px;
   }
 }
 
@@ -122,6 +130,11 @@
 
   .about-text {
     font-size: 1.1rem;
+  }
+
+  .left__about-da-vinci-plataform img {
+    max-width: 400px;
+    max-height: 400px;
   }
 }
 
@@ -160,4 +173,103 @@
     width: .8rem;
   }
 
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 1.8rem;
+  }
+
+  .about-text {
+    font-size: 1rem;
+  }
+
+  .left__about-da-vinci-plataform img {
+    max-width: 300px;
+    max-height: 300px;
+    margin-top: 40px;
+  }
+
+  .more-info-button {
+    width: 190px;
+    height: 50px;
+    margin-top: 10px;
+  }
+  .more-info-button__span {
+    font-size: .9rem;
+  }
+  .more-info-button__icon {
+    height: .8rem;
+    width: .8rem;
+  }
+  .more-info-button__icon svg {
+    height: .8rem;
+    width: .8rem;
+  }
+  }
+
+@media (max-width: 480px) {
+  .about-title {
+    font-size: 1.5rem;
+  }
+
+  .about-text {
+    font-size: .9rem;
+  }
+
+  .left__about-da-vinci-plataform img {
+    max-width: 250px;
+    max-height: 250px;
+    margin-top: 40px;
+  }
+
+  .more-info-button {
+    width: 190px;
+    height: 50px;
+    margin-top: 10px;
+  }
+  .more-info-button__span {
+    font-size: .8rem;
+  }
+  .more-info-button__icon {
+    height: .8rem;
+    width: .8rem;
+  }
+  .more-info-button__icon svg {
+    height: .8rem;
+    width: .8rem;
+  }
+  }
+
+@media (max-width: 320px) {
+  .about-title {
+    font-size: 1.3rem;
+  }
+
+  .about-text {
+    font-size: .8rem;
+  }
+
+  .left__about-da-vinci-plataform img {
+    max-width: 200px;
+    max-height: 200px;
+    margin-top: 40px;
+  }
+
+  .more-info-button {
+    width: 180px;
+    height: 50px;
+    margin-top: 10px;
+  }
+  .more-info-button__span {
+    font-size: .7rem;
+  }
+  .more-info-button__icon {
+    height: .8rem;
+    width: .8rem;
+  }
+  .more-info-button__icon svg {
+    height: .8rem;
+    width: .8rem;
+  }
+
+}
 }

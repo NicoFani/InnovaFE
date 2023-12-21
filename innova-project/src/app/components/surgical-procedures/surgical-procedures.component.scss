@@ -1,0 +1,247 @@
+.section-surgical-procedures {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../../../assets/images/da-vinci-plataform.jpg');
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.container-surgical-procedures {
+  width: 100%;
+  height: 100%;
+  margin: 80px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.surgical-procedures__title {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0 0 0;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  color: #fff;
+  z-index: 10;
+}
+
+.separator {
+  width: 10%;
+  height: 1px;
+  background-color: #fff;
+  margin-bottom: 30px;
+  z-index: 15;
+}
+
+.surgical-procedures__items {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.procedure-item {
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px 10px;
+  margin-bottom: 30px;
+  z-index: 20;
+  box-shadow: 5px 5px 15px rgba(83, 83, 83, 0.4);
+  border-radius: 1rem;
+  background-color: #FF8200;
+  cursor: pointer;
+}
+
+.secondary {
+  background-color: rgba($color: #9B9B9B, $alpha: .75);
+}
+
+.procedure-item summary {
+  width: 50%;
+  height: auto;
+  color: #fff;
+  z-index: 25;
+}
+
+.procedure-item p {
+  width: 100%;
+  height: auto;
+  color: #d1d1d1;
+  z-index: 25;
+  margin-top: 15px;
+}
+
+
+// ESTILOS RESPONSIVOS
+
+@media (max-width: 1200px) {
+  .container-surgical-procedures {
+    margin: 0;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .separator {
+    width: 20%;
+  }
+
+  .surgical-procedures__items {
+    width: 100%;
+  }
+
+  .procedure-item {
+    width: 90%;
+  }
+
+  .procedure-item summary {
+    width: 60%;
+  }
+
+  .procedure-item p {
+    width: 60%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container-surgical-procedures {
+    margin-bottom: 50px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .separator {
+    width: 20%;
+  }
+
+  .surgical-procedures__items {
+    width: 100%;
+  }
+
+  .procedure-item {
+    width: 80%;
+  }
+
+  .procedure-item summary {
+    width: 60%;
+  }
+
+  .procedure-item p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-surgical-procedures {
+    margin-bottom: 50px;
+  }
+
+  .title {
+    font-size: 1.7rem;
+  }
+
+  .separator {
+    width: 20%;
+  }
+
+  .surgical-procedures__items {
+    width: 100%;
+  }
+
+  .procedure-item {
+    width: 90%;
+  }
+
+  .procedure-item summary {
+    width: 100%;
+  }
+
+  .procedure-item p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-surgical-procedures {
+    margin-bottom: 50px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .separator {
+    width: 20%;
+  }
+
+  .surgical-procedures__items {
+    width: 100%;
+  }
+
+  .procedure-item {
+    width: 90%;
+  }
+
+  .procedure-item summary {
+    width: 100%;
+  }
+
+  .procedure-item p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  .container-surgical-procedures {
+    margin-bottom: 50px;
+  }
+
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .separator {
+    width: 20%;
+  }
+
+  .surgical-procedures__items {
+    width: 100%;
+  }
+
+  .procedure-item {
+    width: 90%;
+  }
+
+  .procedure-item summary {
+    width: 100%;
+  }
+
+  .procedure-item p {
+    width: 100%;
+  }
+}

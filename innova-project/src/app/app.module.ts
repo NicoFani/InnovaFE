@@ -10,6 +10,12 @@ import { AboutSebastianComponent } from './components/about-sebastian/about-seba
 import { AboutRoboticSurgeryComponent } from './components/about-robotic-surgery/about-robotic-surgery.component';
 import { AboutDaVinciPlataformComponent } from './components/about-da-vinci-plataform/about-da-vinci-plataform.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { AboutFinochiettoSanatoriumComponent } from './components/about-finochietto-sanatorium/about-finochietto-sanatorium.component';
+import { RoboticComponent } from './robotic/robotic.component';
+import { BenefitsComponent } from './components/benefits/benefits.component';
+import { SurgicalProceduresComponent } from './components/surgical-procedures/surgical-procedures.component';
+import { DrBernavaComponent } from './dr-bernava/dr-bernava.component';
+import { DrAnsaldiComponent } from './dr-ansaldi/dr-ansaldi.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +26,13 @@ import { FooterComponent } from './components/footer/footer.component';
     AboutSebastianComponent,
     AboutRoboticSurgeryComponent,
     AboutDaVinciPlataformComponent,
-    FooterComponent
+    FooterComponent,
+    AboutFinochiettoSanatoriumComponent,
+    RoboticComponent,
+    BenefitsComponent,
+    SurgicalProceduresComponent,
+    DrBernavaComponent,
+    DrAnsaldiComponent
   ],
   imports: [
     BrowserModule,

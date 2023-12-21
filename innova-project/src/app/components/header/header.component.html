@@ -1,15 +1,46 @@
-<header class="header-container" id="header">
+<!-- <header [ngClass]="{'estilo-cv': currentRoute === 'dr-juan-luis-bernava' || currentRoute === 'dr-sebastian-ansaldi'}" class="header-container" id="header">
   <div class="left-container">
-    <span [routerLink]="" (click)="goToHome()" class="left-container__text">INNOVA</span>
+    <span [routerLink]="['/']" (click)="goToHome()" class="left-container__text">INNOVA</span>
   </div>
   <div class="right-container">
-    <nav class="right-container__nav">
+    <nav class="right-container__nav" [ngClass]="{'right-container__nav--active': active}">
       <ul class="nav__ul">
-        <li class="ul__item"><a [routerLink]="" (click)="goToHome()">Inicio</a></li>
-        <li class="ul__item"><a>Formación</a></li>
-        <li class="ul__item"><a>Robótica</a></li>
-        <li class="ul__item"><a>Contactanos</a></li>
+        <li class="ul__item"><a [routerLink]="['/']" (click)="goToHome()">Inicio</a></li>
+        <li class="ul__item"><a (click)="goToRoboticSurgery()">Robótica</a></li>
+        <li class="ul__item"><a (click)="goToDrBernava()">Nosotros</a></li>
+        <li class="ul__item"><a (click)="goToFooter()">Contactanos</a></li>
       </ul>
     </nav>
   </div>
+  <div (click)="setActive()" class="menu__icon">
+    <svg class="menu__svg" xmlns="http://www.w3.org/2000/svg" height="20" width="18" viewBox="0 0 448 512">
+      <path fill="#4ba4bd"
+        d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+    </svg>
+    </div>
+</header> -->
+
+<header class="header" [ngClass]="{'estilo-cv': currentRoute === 'dr-juan-luis-bernava' || currentRoute === 'dr-sebastian-ansaldi'}">
+
+  <span [routerLink]="['/']" (click)="goToHome()" class="header__span">INNOVA</span>
+
+  <button (click)="setActive()" class="header__button">
+    <svg class="header__svg" xmlns="http://www.w3.org/2000/svg" height="16" width="14"
+      viewBox="0 0 448 512">
+      <path fill="#4ba4bd"
+        d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+    </svg>
+  </button>
+
+  <nav class="header__nav" [ngClass]="{'header__nav--active': active}">
+    <ul class="header__ul">
+      <li class="header__li"><a (click)="setActive()" [routerLink]="['/']" (click)="goToHome()" class="header__a">Inicio</a></li>
+      <li class="header__li"><a (click)="setActive()" (click)="goToRoboticSurgery()" class="header__a">Robótica</a></li>
+      <li class="header__li"><a (click)="setActive()" (click)="goToDrBernava()" class="header__a">Nosotros</a></li>
+      <li class="header__li"><a (click)="setActive()" (click)="goToFooter()" class="header__a">Contactanos</a></li>
+    </ul>
+  </nav>
 </header>
+
+
+
