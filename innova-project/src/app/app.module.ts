@@ -16,6 +16,7 @@ import { BenefitsComponent } from './components/benefits/benefits.component';
 import { SurgicalProceduresComponent } from './components/surgical-procedures/surgical-procedures.component';
 import { DrBernavaComponent } from './dr-bernava/dr-bernava.component';
 import { DrAnsaldiComponent } from './dr-ansaldi/dr-ansaldi.component';
+import { AboutInnovaComponent } from './components/about-innova/about-innova.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { DrAnsaldiComponent } from './dr-ansaldi/dr-ansaldi.component';
     BenefitsComponent,
     SurgicalProceduresComponent,
     DrBernavaComponent,
-    DrAnsaldiComponent
+    DrAnsaldiComponent,
+    AboutInnovaComponent
   ],
   imports: [
     BrowserModule,

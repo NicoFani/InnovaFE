@@ -5,10 +5,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #e6e4e4;
 }
 
 .container-about-finochietto-sanatorium {
-  width: 60%;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -18,14 +19,14 @@
 }
 
 .about-title {
-  font-size: 1.1rem;
+  font-size: 3rem;
   letter-spacing: 2px;
   margin-bottom: 30px;
   color: #5271FF;
 }
 
 .about-text {
-  font-size: 2rem;
+  font-size: 1.3rem;
   letter-spacing: 1px;
   margin-bottom: 30px;
   list-style: none;
@@ -43,28 +44,31 @@
   width: 100%;
   height: auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  padding: 80px 50px;
+  padding: 80px 0 10px 0;
   align-items: center;
-  margin-top: 80px;
-  background-color: rgba($color: #000000, $alpha: 0.1);
-  box-shadow: 5px 5px 15px rgba(83, 83, 83, 0.4);
-  border-radius: 1rem;
+  margin-top: 70px;
 }
 
 .left__container-about-finochietto-sanatorium {
-  width: auto;
+  width: 50%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-bottom: 70px;
 }
 
 .finochietto-img {
   max-width: 500px;
   max-height: 500px;
   margin-right: 80px;
+}
+
+.finochietto-logo {
+  max-width: 900px;
+  max-height: 500px;
 }
 
 .right__container-about-finochietto-sanatorium {
@@ -75,7 +79,7 @@
   align-items: flex-start;
 }
 
-.direction-text {
+.address-text {
   font-size: 1.1rem;
   color: #5271FF;
   margin-bottom: 10px;
@@ -135,7 +139,7 @@
 
 @media (max-width: 1400px) {
   .about-text {
-    font-size: 1.8rem;
+    font-size: 1.1rem;
   }
 
   .finochietto-img {
@@ -144,12 +148,21 @@
     margin-right: 50px;
   }
 
+  .finochietto-logo {
+    max-width: 700px;
+    max-height: 400px;
+  }
+
+  .about-title {
+    font-size: 2.5rem;
+  }
+
   .sanatorium-phrase {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   .secondary-container-about-finochietto-santorium {
-    padding: 50px 30px;
+    padding: 50px 0;
   }
 }
 
@@ -161,19 +174,28 @@
     margin-right: 30px;
   }
 
+  .finochietto-logo {
+    max-width: 600px;
+    max-height: 300px;
+  }
+
   .sanatorium-phrase {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 }
 
 @media (max-width: 1024px) {
   .about-text {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   }
 
   .secondary-container-about-finochietto-santorium {
     flex-direction: column;
-    padding: 50px 30px;
+    padding: 50px 0;
+  }
+
+  .left__container-about-finochietto-sanatorium {
+    flex-direction: column;
   }
 
   .finochietto-img {
@@ -182,8 +204,13 @@
     margin-bottom: 50px;
   }
 
+  .finochietto-logo {
+    max-width: 600px;
+    max-height: 400px;
+  }
+
   .sanatorium-phrase {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .more-info-button {
@@ -207,10 +234,23 @@
 }
 
 @media (max-width: 768px) {
+  .container-about-finochietto-sanatorium {
+      margin: 100px 0;
+    }
+
   .finochietto-img {
     max-width: 350px;
     max-height: 350px;
     margin-right: 0;
+  }
+
+  .finochietto-logo {
+    max-width: 500px;
+    max-height: 350px;
+  }
+
+  .right__container-about-finochietto-sanatorium {
+    width: 90%;
   }
 
   .sanatorium-phrase {
@@ -219,8 +259,16 @@
 }
 
 @media (max-width: 480px) {
+  .container-about-finochietto-sanatorium {
+    margin: 100px 0;
+  }
+
   .about-text {
     font-size: 1rem;
+  }
+
+  .about-title {
+    font-size: 2rem;
   }
 
   .finochietto-img {
@@ -228,28 +276,36 @@
     max-height: 300px;
   }
 
+  .finochietto-logo {
+    max-width: 400px;
+    max-height: 300px;
+  }
+
   .sanatorium-phrase {
-    font-size: .9rem;
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 320px) {
   .about-title {
-    font-size: .7rem;
-    margin-bottom: 20px;
+    font-size: 1.5rem;
   }
 
-  .direction-text {
-    font-size: .7rem;
-  }
-
-  .secondary-container-about-finochietto-santorium {
-    flex-direction: column;
-    padding: 50px 50px;
+  .about-text {
+    font-size: .9rem;
   }
 
   .finochietto-img {
     max-width: 250px;
     max-height: 250px;
+  }
+
+  .finochietto-logo {
+    max-width: 250px;
+    max-height: 250px;
+  }
+
+  .sanatorium-phrase {
+    font-size: 1rem;
   }
 }
