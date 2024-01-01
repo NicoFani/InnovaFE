@@ -8,16 +8,32 @@ import { Component, OnInit} from '@angular/core';
 export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
-    this.playVideoOnLoad();
-  }
+
+    }
 
   playVideoOnLoad() {
     const video = document.getElementById('video') as HTMLVideoElement;
     if (video) {
       video.addEventListener('canplay', () => {
         video.play();
+
       });
-      video.load();
     }
   }
+
+  isSafari() {
+    return /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+  }
+
+  // playAudio() {
+  //   const audio = document.getElementById('audio') as HTMLAudioElement;
+  //   if (audio) {
+  //       audio.addEventListener('canplay', () => {
+  //       audio.play();
+  //       console.log('audio played');
+  //     });
+  //     audio.load();
+  //     console.log('audio loaded');
+  //   }
+  // }
 }

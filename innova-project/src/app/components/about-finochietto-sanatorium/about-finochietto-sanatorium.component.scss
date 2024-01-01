@@ -15,7 +15,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  margin: 150px 0;
+  margin: 100px 0;
 }
 
 .about-title {
@@ -48,7 +48,6 @@
   justify-content: center;
   padding: 80px 0 10px 0;
   align-items: center;
-  margin-top: 70px;
 }
 
 .left__container-about-finochietto-sanatorium {
@@ -67,12 +66,12 @@
 }
 
 .finochietto-logo {
-  max-width: 900px;
+  max-width: 700px;
   max-height: 500px;
 }
 
 .right__container-about-finochietto-sanatorium {
-  width: auto;
+  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -86,7 +85,7 @@
 }
 
 .sanatorium-phrase {
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: #000000;
   margin-bottom: 10px;
 }
@@ -158,7 +157,8 @@
   }
 
   .sanatorium-phrase {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    width: 80%;
   }
 
   .secondary-container-about-finochietto-santorium {
@@ -277,7 +277,7 @@
   }
 
   .finochietto-logo {
-    max-width: 400px;
+    max-width: 300px;
     max-height: 300px;
   }
 
