@@ -2,14 +2,14 @@
   <div class="container-about-innova">
     <div class="first__container-about-innova">
       <span class="title__about-innova">¿Qué es INNOVA?</span>
-      <p class="text__about-innova">Innova es un equipo de Médicos de la ciudad de Rosario que te brindan acceso al sistema quirúrgico Da Vinci, el cual es
+      <p class="text__about-innova">Innova es un equipo de Médicos de la ciudad de Rosario que te brinda acceso al sistema quirúrgico Da Vinci, el cual es
       el instrumento quirúrgico más sofisticado que existe hoy en día. Es un robot que obedece al cirujano aumentando su
       capacidad para operar con precisión y destreza, mejorando los resultados y disminuyendo las
       Complicaciones quirúrgicas. La plataforma Da Vinci Xi se encuentra en el Sanatorio Finocchieto de la Ciudad Autónoma de
       Buenos Aires.</p>
     </div>
     <div class="second__container-about-innvoa">
-      <video class="innova-video" id="innova-video" onloadedmetadata="this.muted=true" autoplay loop>
+      <video class="innova-video" id="innova-video" onloadedmetadata="this.muted=true" autoplay loop [attr.controls]="!isSafari() ? 'true': null">
         <source src="assets/images/da_vinci_surgery.mp4" type="video/mp4">
       </video>
     </div>

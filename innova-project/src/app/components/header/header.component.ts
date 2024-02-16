@@ -59,7 +59,6 @@ export class HeaderComponent implements OnInit{
 
   setActive(): void {
     this.active = !this.active;
-    console.log('hola');
   }
 
 }

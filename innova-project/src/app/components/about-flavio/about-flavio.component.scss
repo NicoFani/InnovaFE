@@ -1,4 +1,4 @@
-.section-about-juan {
+.section-about-flavio {
   width: 100%;
   height: auto;
   display: flex;
@@ -7,7 +7,7 @@
   justify-content: space-around;
 }
 
-.container-about-juan {
+.container-about-flavio {
   width: 90%;
   height: 100%;
   display: flex;
@@ -17,7 +17,7 @@
   margin: 150px 0;
 }
 
-.left__container-about-juan {
+.left__container-about-flavio {
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -81,7 +81,7 @@
   transform: translateX(5px);
 }
 
-.right__container-about-juan {
+.right__container-about-flavio {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -89,7 +89,7 @@
   margin-left: 40px;
 }
 
-.right__container-about-juan img {
+.right__container-about-flavio img {
   max-width: 500px;
   max-height: 500px;
   border-radius: 100%;
@@ -97,7 +97,7 @@
   transition: all 0.3s ease-in-out;
 }
 
-.right__container-about-juan img:hover {
+.right__container-about-flavio img:hover {
   scale: 1.1;
 }
 
@@ -112,7 +112,7 @@
     font-size: 1rem;
   }
 
-  .right__container-about-juan img {
+  .right__container-about-flavio img {
     max-width: 450px;
     max-height: 450px;
   }
@@ -127,7 +127,7 @@
     font-size: 1rem;
   }
 
-  .right__container-about-juan img {
+  .right__container-about-flavio img {
     max-width: 400px;
     max-height: 400px;
   }
@@ -143,23 +143,23 @@
     font-size: 0.9rem;
   }
 
-  .right__container-about-juan img {
+  .right__container-about-flavio img {
     max-width: 350px;
     max-height: 350px;
   }
 }
 
 @media (max-width: 768px) {
-  .section-about-juan {
+  .section-about-flavio {
     margin: 100px 0;
   }
 
-  .container-about-juan {
+  .container-about-flavio {
     flex-direction: column-reverse;
     margin: 0;
   }
 
-  .left__container-about-juan {
+  .left__container-about-flavio {
     width: 100%;
     margin-top: 50px;
   }
@@ -195,12 +195,12 @@
     width: 0.8rem;
   }
 
-  .right__container-about-juan {
+  .right__container-about-flavio {
     width: 100%;
     margin: 0;
   }
 
-  .right__container-about-juan img {
+  .right__container-about-flavio img {
     max-width: 300px;
     max-height: 300px;
   }
@@ -224,7 +224,7 @@
     height: 40px;
   }
 
-  .right__container-about-juan img {
+  .right__container-about-flavio img {
     max-width: 250px;
     max-height: 250px;
   }
@@ -248,7 +248,7 @@
     height: 40px;
   }
 
-  .right__container-about-juan img {
+  .right__container-about-flavio img {
     max-width: 200px;
     max-height: 200px;
   }

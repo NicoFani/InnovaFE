@@ -1,15 +1,24 @@
 <!-- Banner de presentación -->
 <div class="presentation-banner">
   <div class="overlay"></div>
-  
   <div *ngIf="!isSafari(); else safariTemplate" class="video-container">
-    <video id="video" onloadedmetadata="this.muted=true" autoplay loop [attr.controls]="!isSafari() ? 'true': null" (loadeddata)="playVideoOnLoad()">
-      <source src="assets/images/da_vinci_video_audio.mp4" type="video/mp4">
+    <video
+      id="video"
+      onloadedmetadata="this.muted=true"
+      autoplay
+      loop
+      (loadeddata)="playVideoOnLoad()"
+    >
+      <source src="assets/images/da_vinci_video.mp4" type="video/mp4" />
     </video>
   </div>
-  
+
   <ng-template #safariTemplate>
-    <img class="img__safari" src="assets/images/da-vinci-platform.jpeg" alt="">
+    <img
+      class="img__safari"
+      src="assets/images/da-vinci-platform.jpeg"
+      alt=""
+    />
   </ng-template>
   <div class="container-text">
     <h1>Introduciendo la Cirugía Robótica en Rosario</h1>
@@ -17,15 +26,15 @@
       <span class="text-separator"></span>
     </div>
     <h2>Estableciendo el punto de referencia para la excelencia en cirugía</h2>
-    </div>
   </div>
+</div>
 <app-about-innova></app-about-innova>
 <app-about-robotic-surgery></app-about-robotic-surgery>
 <app-about-da-vinci-plataform></app-about-da-vinci-plataform>
 <app-about-finochietto-sanatorium></app-about-finochietto-sanatorium>
 <app-about-juan></app-about-juan>
 <app-about-sebastian></app-about-sebastian>
-
+<app-about-flavio></app-about-flavio>
 
 <!-- <audio id="audio" autoplay controls loop>
   <source src="assets/gladiator_song.mp3" type="audio/mpeg">

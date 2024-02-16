@@ -17,6 +17,7 @@ import { SurgicalProceduresComponent } from './components/surgical-procedures/su
 import { DrBernavaComponent } from './dr-bernava/dr-bernava.component';
 import { DrAnsaldiComponent } from './dr-ansaldi/dr-ansaldi.component';
 import { AboutInnovaComponent } from './components/about-innova/about-innova.component';
+import { AboutFlavioComponent } from './components/about-flavio/about-flavio.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { AboutInnovaComponent } from './components/about-innova/about-innova.com
     SurgicalProceduresComponent,
     DrBernavaComponent,
     DrAnsaldiComponent,
-    AboutInnovaComponent
+    AboutInnovaComponent,
+    AboutFlavioComponent
   ],
   imports: [
     BrowserModule,

@@ -21,4 +21,7 @@ export class AboutInnovaComponent implements OnInit {
     }
   }
 
+  isSafari() {
+    return /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+  }
 }
